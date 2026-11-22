@@ -21,9 +21,417 @@
       href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./style.css" />
   </head>
-  <body class="bg-[#FDF6F8] text-[#3B1E28] antialiased selection:bg-[#F3D2DC] selection:text-[#3B1E28]">
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+  <body>
+    <div class="page-shell">
+      <main class="keepsake-main">
+        <!-- Centered Stacked Title with Coquette Satin Bow & Delicate Floating Hearts -->
+        <header class="hero-header">
+          <svg
+            viewBox="0 0 120 72"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="satin-bow hero-bow"
+            aria-hidden="true"
+          >
+            <path
+              d="M57 32C45 14 21 8 13 21C6 32 19 46 39 39C48 36 54 34 57 32Z"
+              fill="#B84868"
+              fill-opacity="0.22"
+              stroke="#B84868"
+              stroke-width="2.2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M53 31C42 22 25 21 20 27"
+              stroke="#B84868"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              opacity="0.7"
+            />
+            <path
+              d="M63 32C75 14 99 8 107 21C114 32 101 46 81 39C72 36 66 34 63 32Z"
+              fill="#B84868"
+              fill-opacity="0.22"
+              stroke="#B84868"
+              stroke-width="2.2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M67 31C78 22 95 21 100 27"
+              stroke="#B84868"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              opacity="0.7"
+            />
+            <path
+              d="M56 36C49 48 42 58 32 66C36 60 40 53 42 46C46 43 52 39 56 36Z"
+              fill="#B84868"
+              fill-opacity="0.16"
+              stroke="#B84868"
+              stroke-width="2.1"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M64 36C71 48 78 58 88 66C84 60 80 53 78 46C74 43 68 39 64 36Z"
+              fill="#B84868"
+              fill-opacity="0.16"
+              stroke="#B84868"
+              stroke-width="2.1"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <rect
+              x="53"
+              y="25"
+              width="14"
+              height="13"
+              rx="5"
+              fill="#FDF9F9"
+              stroke="#B84868"
+              stroke-width="2.2"
+            />
+          </svg>
+
+          <h1 class="hero-title">
+            <span id="title-line-1" class="hero-title-line">lavi</span>
+            <span id="title-line-2" class="hero-title-line">nd com</span>
+          </h1>
+
+          <!-- Subtle coquette floating heart accents -->
+          <span aria-hidden="true" class="coquette-float heart-accent heart-1">
+            <svg viewBox="0 0 16 16" fill="currentColor" class="tiny-heart tiny-heart-md">
+              <path d="M8 14.2s-5.6-3.5-6.9-7.1C.3 4.8 1.9 2.5 4.3 2.5c1.5 0 2.8.8 3.7 2 .9-1.2 2.2-2 3.7-2 2.4 0 4 2.3 3.2 4.6-1.3 3.6-6.9 7.1-6.9 7.1z" />
+            </svg>
+          </span>
+          <span aria-hidden="true" class="coquette-float-delayed heart-accent heart-2">
+            <svg viewBox="0 0 16 16" fill="currentColor" class="tiny-heart tiny-heart-sm">
+              <path d="M8 14.2s-5.6-3.5-6.9-7.1C.3 4.8 1.9 2.5 4.3 2.5c1.5 0 2.8.8 3.7 2 .9-1.2 2.2-2 3.7-2 2.4 0 4 2.3 3.2 4.6-1.3 3.6-6.9 7.1-6.9 7.1z" />
+            </svg>
+          </span>
+          <span aria-hidden="true" class="coquette-float heart-accent heart-3">
+            <svg viewBox="0 0 16 16" fill="currentColor" class="tiny-heart tiny-heart-sm">
+              <path d="M8 14.2s-5.6-3.5-6.9-7.1C.3 4.8 1.9 2.5 4.3 2.5c1.5 0 2.8.8 3.7 2 .9-1.2 2.2-2 3.7-2 2.4 0 4 2.3 3.2 4.6-1.3 3.6-6.9 7.1-6.9 7.1z" />
+            </svg>
+          </span>
+          <span aria-hidden="true" class="coquette-float-delayed heart-accent heart-4">
+            <svg viewBox="0 0 16 16" fill="currentColor" class="tiny-heart tiny-heart-md">
+              <path d="M8 14.2s-5.6-3.5-6.9-7.1C.3 4.8 1.9 2.5 4.3 2.5c1.5 0 2.8.8 3.7 2 .9-1.2 2.2-2 3.7-2 2.4 0 4 2.3 3.2 4.6-1.3 3.6-6.9 7.1-6.9 7.1z" />
+            </svg>
+          </span>
+        </header>
+
+        <!-- Centered Row of 2 Coquette Framed Photograph Cards -->
+        <section
+          id="photo-grid"
+          aria-label="Framed couple pictures"
+          class="photo-grid"
+        ></section>
+
+        <!-- Interactive Love Letter Envelope -->
+        <section
+          id="love-letter-section"
+          aria-label="Love letter envelope"
+          class="love-letter-section"
+        ></section>
+      </main>
+
+      <!-- Photo Lightbox Modal -->
+      <div
+        id="lightbox-backdrop"
+        class="lightbox-backdrop"
+        role="dialog"
+        aria-modal="true"
+        hidden
+      >
+        <div id="lightbox-dialog" class="lightbox-dialog">
+          <button
+            id="lightbox-close"
+            type="button"
+            aria-label="Close picture viewer"
+            class="icon-close-btn lightbox-close-btn"
+          >
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-svg" aria-hidden="true">
+              <path d="M18 6 6 18" />
+              <path d="m6 6 12 12" />
+            </svg>
+          </button>
+
+          <div class="lightbox-media-col">
+            <div class="stitched-frame">
+              <div id="lightbox-image-wrap" class="photo-surface lightbox-image-surface">
+                <img
+                  id="lightbox-image"
+                  src=""
+                  alt=""
+                  referrerpolicy="no-referrer"
+                  class="lightbox-image"
+                />
+                <div id="lightbox-fallback" class="photo-fallback lightbox-fallback" hidden>
+                  <span id="lightbox-fallback-label" class="photo-fallback-label"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="lightbox-details-col">
+            <div>
+              <div class="lightbox-label-row">
+                <svg
+                  viewBox="0 0 120 72"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="satin-bow lightbox-bow"
+                  aria-hidden="true"
+                >
+                  <path d="M57 32C45 14 21 8 13 21C6 32 19 46 39 39C48 36 54 34 57 32Z" fill="#C85D7C" fill-opacity="0.22" stroke="#C85D7C" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M53 31C42 22 25 21 20 27" stroke="#C85D7C" stroke-width="1.5" stroke-linecap="round" opacity="0.7" />
+                  <path d="M63 32C75 14 99 8 107 21C114 32 101 46 81 39C72 36 66 34 63 32Z" fill="#C85D7C" fill-opacity="0.22" stroke="#C85D7C" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M67 31C78 22 95 21 100 27" stroke="#C85D7C" stroke-width="1.5" stroke-linecap="round" opacity="0.7" />
+                  <path d="M56 36C49 48 42 58 32 66C36 60 40 53 42 46C46 43 52 39 56 36Z" fill="#C85D7C" fill-opacity="0.16" stroke="#C85D7C" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M64 36C71 48 78 58 88 66C84 60 80 53 78 46C74 43 68 39 64 36Z" fill="#C85D7C" fill-opacity="0.16" stroke="#C85D7C" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" />
+                  <rect x="53" y="25" width="14" height="13" rx="5" fill="#FDF9F9" stroke="#C85D7C" stroke-width="2.2" />
+                </svg>
+                <p id="lightbox-label" class="lightbox-label"></p>
+              </div>
+              <h3 id="lightbox-title" class="lightbox-title"></h3>
+              <p id="lightbox-caption" class="lightbox-caption"></p>
+            </div>
+
+            <div class="lightbox-footer">
+              <span id="lightbox-counter" class="lightbox-counter">01 / 02</span>
+              <div class="lightbox-nav">
+                <button
+                  id="lightbox-prev"
+                  type="button"
+                  aria-label="Previous photo"
+                  class="lightbox-btn lightbox-btn-secondary"
+                >
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="nav-chevron" aria-hidden="true">
+                    <path d="m15 18-6-6 6-6" />
+                  </svg>
+                  Prev
+                </button>
+                <button
+                  id="lightbox-next"
+                  type="button"
+                  aria-label="Next photo"
+                  class="lightbox-btn lightbox-btn-primary"
+                >
+                  Next
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="nav-chevron" aria-hidden="true">
+                    <path d="m9 18 6-6-6-6" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cat & Mouse Cursor Chase Layer -->
+      <div
+        id="cat-chase-layer"
+        aria-hidden="true"
+        class="cat-chase-layer"
+        hidden
+      >
+        <div id="chase-mouse" class="chase-actor">
+          <svg
+            id="chase-mouse-svg"
+            viewBox="0 0 38 26"
+            class="chase-mouse-svg"
+            fill="none"
+          >
+            <path
+              d="M4 17C1 14 2 10 6 11"
+              stroke="#DF8CA4"
+              stroke-width="1.8"
+              stroke-linecap="round"
+            />
+            <ellipse
+              cx="19"
+              cy="16"
+              rx="11"
+              ry="7.5"
+              fill="#FFFDFD"
+              stroke="#C9748D"
+              stroke-width="1.6"
+            />
+            <circle
+              cx="23"
+              cy="8.5"
+              r="4.2"
+              fill="#FFFDFD"
+              stroke="#C9748D"
+              stroke-width="1.5"
+            />
+            <circle cx="23" cy="8.8" r="2.2" fill="#F4B6C7" />
+            <circle cx="26.5" cy="14.5" r="1.2" fill="#4B2632" />
+            <circle cx="30.2" cy="16" r="1.3" fill="#E36D8E" />
+            <ellipse cx="24.5" cy="17" rx="1.6" ry="0.9" fill="#F4B6C7" opacity="0.85" />
+          </svg>
+        </div>
+
+        <div id="chase-cat" class="chase-actor">
+          <div id="chase-cat-flip" class="chase-cat-flip">
+            <svg
+              id="chase-cat-heart"
+              viewBox="0 0 16 16"
+              class="chase-cat-heart"
+              fill="currentColor"
+            >
+              <path d="M8 14.2s-5.6-3.5-6.9-7.1C.3 4.8 1.9 2.5 4.3 2.5c1.5 0 2.8.8 3.7 2 .9-1.2 2.2-2 3.7-2 2.4 0 4 2.3 3.2 4.6-1.3 3.6-6.9 7.1-6.9 7.1z" />
+            </svg>
+
+            <svg
+              viewBox="0 0 68 54"
+              class="chase-cat-svg"
+              fill="none"
+            >
+              <path
+                d="M14 34C6 31 5 20 11 17C14 15.5 16 19 14 23"
+                stroke="#B85C77"
+                stroke-width="4.2"
+                stroke-linecap="round"
+              />
+              <path
+                d="M14 34C6 31 5 20 11 17C14 15.5 16 19 14 23"
+                stroke="#FFFDFD"
+                stroke-width="2.4"
+                stroke-linecap="round"
+              />
+
+              <g id="cat-legs-running" hidden>
+                <path d="M21 40L15 47" stroke="#B85C77" stroke-width="4.5" stroke-linecap="round" />
+                <path d="M21 40L15 47" stroke="#FFFDFD" stroke-width="2.5" stroke-linecap="round" />
+                <path d="M42 40L49 46" stroke="#B85C77" stroke-width="4.5" stroke-linecap="round" />
+                <path d="M42 40L49 46" stroke="#FFFDFD" stroke-width="2.5" stroke-linecap="round" />
+              </g>
+
+              <g id="cat-legs-sitting">
+                <ellipse cx="23" cy="44" rx="4" ry="2.5" fill="#FFFDFD" stroke="#B85C77" stroke-width="1.4" />
+                <ellipse cx="39" cy="44" rx="4" ry="2.5" fill="#FFFDFD" stroke="#B85C77" stroke-width="1.4" />
+              </g>
+
+              <ellipse
+                cx="30"
+                cy="34"
+                rx="14"
+                ry="10"
+                fill="#FFFDFD"
+                stroke="#B85C77"
+                stroke-width="1.8"
+              />
+              <circle
+                cx="42"
+                cy="22"
+                r="11.5"
+                fill="#FFFDFD"
+                stroke="#B85C77"
+                stroke-width="1.8"
+              />
+              <path
+                d="M33 14L34 5L40.5 11"
+                fill="#FFFDFD"
+                stroke="#B85C77"
+                stroke-width="1.8"
+                stroke-linejoin="round"
+              />
+              <path d="M34.8 12.2L35.2 7.5L39 10.8Z" fill="#F4B6C7" />
+              <path
+                d="M44 11L50 5L51.5 14"
+                fill="#FFFDFD"
+                stroke="#B85C77"
+                stroke-width="1.8"
+                stroke-linejoin="round"
+              />
+              <path d="M45.5 10.8L49.2 7.5L49.8 12.2Z" fill="#F4B6C7" />
+
+              <path
+                d="M36.5 10.5C33.5 7.5 30 9.5 32.5 12.5C34 13.5 35.8 12 36.5 10.5Z"
+                fill="#E57D9B"
+                stroke="#B84868"
+                stroke-width="1"
+              />
+              <path
+                d="M36.5 10.5C39.5 7.5 43 9.5 40.5 12.5C39 13.5 37.2 12 36.5 10.5Z"
+                fill="#E57D9B"
+                stroke="#B84868"
+                stroke-width="1"
+              />
+              <circle cx="36.5" cy="11" r="1.6" fill="#C45473" />
+
+              <circle cx="40.5" cy="21" r="1.4" fill="#4B2632" />
+              <circle cx="47.5" cy="21" r="1.4" fill="#4B2632" />
+              <ellipse cx="38" cy="23.8" rx="2" ry="1.1" fill="#F4B6C7" opacity="0.85" />
+              <ellipse cx="50" cy="23.8" rx="2" ry="1.1" fill="#F4B6C7" opacity="0.85" />
+              <path d="M43.2 22.8L44.8 22.8L44 23.8Z" fill="#E36D8E" />
+              <path
+                d="M42.2 24.7C43 25.6 43.7 25.3 44 24.4C44.3 25.3 45 25.6 45.8 24.7"
+                stroke="#75394A"
+                stroke-width="1.1"
+                stroke-linecap="round"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <!-- Background Music Player & Mute Toggle -->
+      <audio
+        id="bg-audio"
+        src="/assets/aistudio/Miguel_Travis_Scott_-_Skywalker__mp3.pm__6bdac2c5.mp3"
+        loop
+        preload="auto"
+        playsinline
+        aria-hidden="true"
+      ></audio>
+      <button
+        id="music-toggle"
+        type="button"
+        aria-label="Play background music"
+        title="Play background music"
+        class="music-toggle"
+      >
+        <svg
+          id="icon-volume-on"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="icon-svg"
+          aria-hidden="true"
+          hidden
+        >
+          <path d="M11 4.702a.705.705 0 0 0-1.203-.498L6.413 7.587A1.4 1.4 0 0 1 5.416 8H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2.416a1.4 1.4 0 0 1 .997.413l3.383 3.384A.705.705 0 0 0 11 19.298z" />
+          <path d="M16 9a5 5 0 0 1 0 6" />
+          <path d="M19.364 18.364a9 9 0 0 0 0-12.728" />
+        </svg>
+        <svg
+          id="icon-volume-off"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="icon-svg"
+          aria-hidden="true"
+        >
+          <path d="M11 4.702a.705.705 0 0 0-1.203-.498L6.413 7.587A1.4 1.4 0 0 1 5.416 8H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2.416a1.4 1.4 0 0 1 .997.413l3.383 3.384A.705.705 0 0 0 11 19.298z" />
+          <line x1="22" x2="16" y1="9" y2="15" />
+          <line x1="16" x2="22" y1="9" y2="15" />
+        </svg>
+      </button>
+    </div>
+
+    <script type="module" src="./index.js"></script>
   </body>
 </html>
